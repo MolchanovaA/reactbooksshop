@@ -1,0 +1,53 @@
+.emptyTrolley {
+  position: relative;
+}
+.purchaseButton {
+  font-size: 25px;
+  background-color: rgba(48, 48, 48, 0.349);
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.purchaseButton:hover {
+  background-color: rgba(48, 48, 48, 0.573);
+  cursor: pointer;
+}
+
+.purchaseButton:disabled {
+  background-color: rgb(165, 167, 161) !important;
+  cursor: default;
+}
+
+/* Empty trolley*/
+.emptyTrolley li.empty {
+  text-align: center;
+  font-size: 40px;
+  display: block;
+  padding: 50px 0;
+}
+/*Trolley List*/
+.listOfBooksInTrolley {
+  padding-top: 50px;
+}
+.listOfBooksInTrolley li:not(.empty) {
+  border: 1px solid rgb(48, 48, 48);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.listOfBooksInTrolley li:not(:first-child) {
+  border-top: none;
+}
+
+.listOfBooksInTrolley__count {
+  margin-left: 20px;
+}
+li.listOfBooksInTrolley__total.fullPrice {
+  margin-left: 20px;
+  border: none;
+  font-weight: 600;
+}

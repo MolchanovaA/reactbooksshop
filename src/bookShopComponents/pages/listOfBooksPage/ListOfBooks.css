@@ -1,0 +1,64 @@
+/* List of books page*/
+.bsMain form {
+  padding-left: 10px;
+}
+.bookList {
+  margin-top: 15px;
+  border: 1px solid rgba(84, 85, 86, 0.63);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bookList li {
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid rgba(84, 85, 86, 0.63);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 28%;
+  min-width: 200px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bookList li > *:not(.info__priceAndView) {
+  margin-bottom: 10px;
+}
+
+.bookList img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.bookList h2,
+.bookList span {
+  font-weight: 600;
+  line-height: 25px;
+}
+.info__priceAndView {
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.info__priceAndView button {
+  outline: 1px solid rgba(84, 85, 86, 0.63);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.info__priceAndView button:hover {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(84, 85, 86, 0.63);
+  color: rgb(234, 231, 226);
+}
+.hide {
+  /* background-color: red; */
+  display: none !important;
+}

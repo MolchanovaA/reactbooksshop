@@ -1,0 +1,61 @@
+.bsMain__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.bsMain__form__loginIconDef {
+  width: 160px;
+  height: 160px;
+  font-size: 100px;
+  text-align: center;
+  color: rgb(87, 53, 103);
+  border: 1px solid rgba(84, 85, 86, 0.63);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.bsMain__form input[type="text"] {
+  border: 1px solid rgba(181, 183, 186, 0.63);
+  border-radius: 5px;
+  max-width: 200px;
+  padding: 2px 5px;
+  text-align: center;
+}
+
+.bsMain__form button {
+  border: 1px solid rgba(181, 183, 186, 0.63);
+  border-radius: 5px;
+  background-color: rgba(84, 85, 86, 0.63);
+  width: 100%;
+  max-width: 200px;
+  padding: 5px;
+  color: rgb(245, 244, 245);
+  transition: all 0.5s ease-in-out;
+}
+
+.bsMain__form button:not(:disabled):hover {
+  background-color: rgb(84, 65, 87);
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  body {
+    margin: 8px auto;
+  }
+
+  .bsMain__form button,
+  .bsMain__form input[type="text"] {
+    max-width: none;
+    width: 100%;
+  }
+  .bsMain__form__loginIconDef {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.bsMain__form button:disabled {
+  background-color: rgb(207, 199, 202);
+}

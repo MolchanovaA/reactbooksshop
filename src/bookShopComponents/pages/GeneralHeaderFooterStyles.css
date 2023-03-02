@@ -1,0 +1,101 @@
+/* General Styles*/
+body {
+  font-family: "Nunito", sans-serif;
+  padding: 5px 10px;
+  margin: 5px auto;
+  max-width: 800px;
+}
+
+.bsHeader {
+  border: 1px solid rgba(84, 85, 86, 0.63);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+.bsHeader .bsHeader__defLink {
+  font-size: 30px;
+  font-family: "Nerko One", cursive;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  /* color: red; */
+  transition: all 0.5s ease-in-out;
+}
+.fullName {
+  font-size: 15px;
+}
+.bsHeader .bsHeader__defLink:hover {
+  color: rgb(84, 65, 87);
+}
+
+/* general Styles + Nav links*/
+.bsHeader nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+}
+.bsHeader nav a {
+  color: rgb(48, 48, 48);
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bsHeader nav a:hover {
+  color: rgb(84, 65, 87);
+  /* color: blueviolet; */
+  transform: scale(1.2);
+}
+.fullTrolleyColor {
+  color: rgb(175, 89, 189);
+}
+.fullTrolleyAnimation {
+  animation-name: addToTrolley;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  /* animation-timing-function: ease-in-out; */
+}
+
+@keyframes addToTrolley {
+  0% {
+    transform: scale(2);
+    opacity: 0.1;
+    color: rgb(175, 89, 189);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    /* color: yellow; */
+    transform: scale(1);
+  }
+}
+/* General Styles Footer*/
+
+footer {
+  margin-top: 30px;
+}
+
+.footerInfo {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  /* color: rgb(48, 48, 48); */
+}
+
+.footerInfo a {
+  color: rgb(48, 48, 48);
+}
+p.prometheusLink {
+  margin-top: 20px;
+  text-align: center;
+}
